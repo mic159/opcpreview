@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>OPC layout viewer</title>
+  <style>
+    .output {
+      border: 2px solid black;
+      display: inline-block;
+    }
+    textarea {
+      border: none;
+      background-color: inherit;
+    }
+    .output.error {
+      background-color: rgb(255,200,200);
+      border-color: red;
+    }
+    span.error {
+      display: block;
+      text-align: center;
+      border-top: 1px solid;
+      border-color: inherit;
+    }
+    .preview {
+      display: inline-block;
+      text-align: center;
+    }
+    .preview input[type="range"] {
+      width: 30%;
+    }
+    .output-title {
+      border-bottom: 1px solid;
+      padding: 3px;
+    }
+    .preview svg {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+<h1>OPC Layout Viewer</h1>
+<div id="content" />
+<script src="bundle.js"></script>
+<script>
+  main.default();
+</script>
+</body>
+</html>
